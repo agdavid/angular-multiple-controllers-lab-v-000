@@ -17,6 +17,19 @@
             Telephone: {{ contact.phone }}
             <br />
             Email: {{ contact.email }}
+            <br />
+            <br />
+
+            <div ng-controller="StaffController as staff">
+                Hello, {{ staff.name }}!
+                <br />
+                Here is your:
+                <br />
+                Telephone: {{ staff.phone }}
+                <br />
+                Email: {{ staff.email }}
+            </div>
+        
         </div>
     </div>
 
