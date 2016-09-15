@@ -6,8 +6,10 @@ function ContactController() {
   this.email = 'bill@microsoft.com'
   this.phone = '555-1234'
 
-  this.changeName = function() {
-    vm.name = 'Something else!'
+  this.newName = '';
+
+  this.changeName = function(name) {
+    vm.name = name;
   }
 }
 

@@ -30,8 +30,12 @@
                 <br />
                 Email: {{ staff.email }}
             </div>
+            <br/>
 
-            <button ng-click="contact.changeName()">Update Contact Name</button>
+            <div>How about a new Main Contact name?<br/>
+            <input type="text" ng-model="contact.newName">
+            </div>
+            <button ng-click="contact.changeName(contact.newName)">Update Contact Name</button>
         
         </div>
     </div>
